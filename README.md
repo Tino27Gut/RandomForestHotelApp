@@ -1,4 +1,4 @@
-![RandomForest App - Dataset](https://github.com/user-attachments/assets/f9611afb-d00e-4ad5-98df-9398539da1c4)![RandomForest App - Interactivo](https://github.com/user-attachments/assets/5530817f-7783-41ee-a3da-3554757d3ae2)# 🏨 Hotel Booking Cancellation | Predictive App
+# 🏨 Hotel Booking Cancellation | Predictive App
 
 
 ###### 🌳 Random Forest R Project for *Python and R Data Science Diploma* Course
