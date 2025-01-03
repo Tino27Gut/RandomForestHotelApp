@@ -1,4 +1,4 @@
-# 🏨 Hotel Booking Cancellation | Predictive App
+![RandomForest App - Dataset](https://github.com/user-attachments/assets/f9611afb-d00e-4ad5-98df-9398539da1c4)![RandomForest App - Interactivo](https://github.com/user-attachments/assets/5530817f-7783-41ee-a3da-3554757d3ae2)# 🏨 Hotel Booking Cancellation | Predictive App
 
 
 ###### 🌳 Random Forest R Project for *Python and R Data Science Diploma* Course
@@ -48,19 +48,27 @@ The analytical application is divided into the following sections:
 ## 🎬 Section Demos
 
 ### Theory
-[Space for Theory section GIF]
+![RandomForest App - Teoría](https://github.com/user-attachments/assets/6f8be78d-5ac7-4128-b695-528311f617c2)
+
+
+### Dataset
+![RandomForest App - Dataset](https://github.com/user-attachments/assets/46549050-8c47-4fb9-b139-4f8b2cfddaef)
+
 
 ### EDA
-[Space for EDA section GIF]
+![RandomForest App - EDA 2](https://github.com/user-attachments/assets/cdc1c569-b76a-427e-b4e8-7a64e0d67f1a)
+
 
 ### Models
-[Space for Models section GIF]
+![RandomForest App - Modelos (2)](https://github.com/user-attachments/assets/ce30b99d-a993-427a-8d02-52c38d869be4)
+
 
 ### Model Comparison
-[Space for Model Comparison GIF]
+![RandomForest App - Comparación Modelos (2)](https://github.com/user-attachments/assets/0dae8d0d-baf8-4a2f-b1bc-c572686c1bda)
+
 
 ### Interactive
-[Space for Interactive section GIF]
+![RandomForest App - Interactivo (2)](https://github.com/user-attachments/assets/b2b5b858-306b-4b01-91f0-5a464aff6e35)
 
 
 ## 👥 Contributions
