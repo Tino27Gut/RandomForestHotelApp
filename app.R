@@ -20,7 +20,7 @@ library(DT)
 library(rlang)
 
 # Carga y exploración inicial de datos
-hotel_1 <- read.csv("01_data/booking.csv")
+hotel_1 <- read.csv("data/booking.csv")
 hotel <- hotel_1
 str(hotel)
 
@@ -255,7 +255,7 @@ training_indexes <- createDataPartition(hotel$booking.status, p=0.7, list=FALSE)
 hotel_training <- hotel[training_indexes, ]
 hotel_testing <- hotel[-training_indexes, ]
 
-hotel_model <- readRDS("02_rfmodels/Sin Balancear.rds")
+hotel_model <- randomForest(booking.status ~ ., data = hotel_training)
 correct_hotel <- sum(diag(hotel_model$confusion))
 total_hotel <- sum(hotel_model$confusion)
 accuracy_hotel <- correct_hotel / total_hotel
@@ -330,7 +330,7 @@ train_index <- createDataPartition(variables_importantes$booking.status, p = 0.7
 train_data <- variables_importantes[train_index, ]
 test_data <- variables_importantes[-train_index, ]
 
-hotel_model_importante <- readRDS("02_rfmodels/Sin Balancear Top 5.rds")
+hotel_model_importante <- randomForest(booking.status ~ ., data = train_data, ntree = 100, importance = TRUE)
 
 predicciones_importantes <- predict(hotel_model_importante, newdata = test_data)
 
@@ -401,7 +401,7 @@ training_indexes_upsample <- createDataPartition(hotel_upsample$booking.status, 
 hotel_training_upsample <- hotel_upsample[training_indexes_upsample, ]
 hotel_testing_upsample <- hotel_upsample[-training_indexes_upsample, ]
 
-hotel_model_upsample <- readRDS("02_rfmodels/Upsample.rds")
+hotel_model_upsample <- randomForest(booking.status ~ ., data = hotel_training_upsample, ntree = 100)
 
 # Validación del modelo
 predictions_hotel_upsample <- predict(hotel_model_upsample, hotel_testing_upsample)
@@ -475,7 +475,7 @@ training_indexes_upsample_top <- createDataPartition(hotel_upsample_top$booking.
 hotel_training_upsample_top <- hotel_upsample_top[training_indexes_upsample_top, ]
 hotel_testing_upsample_top <- hotel_upsample_top[-training_indexes_upsample_top, ]
 
-hotel_model_upsample_top <- readRDS("02_rfmodels/Upsample Top 5.rds")
+hotel_model_upsample_top <- randomForest(booking.status ~ ., data = hotel_training_upsample_top, ntree = 100)
 
 # Evaluación del modelo
 predictions_hotel_upsample_top <- predict(hotel_model_upsample_top, hotel_testing_upsample_top)
@@ -579,7 +579,7 @@ hotel_testing_downsample <- hotel_downsample[-training_indexes_downsample, ]
 # Creación del modelo
 #-------------------------
 
-hotel_model_downsample <- readRDS("02_rfmodels/Downsample.rds")
+hotel_model_downsample <- randomForest(booking.status ~ ., data = hotel_training_downsample, ntree = 100)
 print(hotel_model_downsample)
 
 # Validación de accuracy
@@ -732,7 +732,7 @@ hotel_testing_downsample_top5 <- hotel_downsample_top5[-training_indexes_downsam
 # Creación del modelo
 #-------------------------
 
-hotel_model_downsample_top5 <- readRDS("02_rfmodels/Downsample Top 5.rds")
+hotel_model_downsample_top5 <- randomForest(booking.status ~ ., data = hotel_training_downsample_top5, ntree = 100, importance = TRUE)
 print(hotel_model_downsample_top5)
 
 #-------------------------

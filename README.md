@@ -1,6 +1,8 @@
-# 🌳 Random Forest Hotel Predictive Analysis 🏨
+# 🏨 Hotel Booking Cancellation | Predictive App
 
-##### Hotel Booking Cancellation Predictive Analytics App - R Project in [Python and R Data Science Diploma]
+
+###### 🌳 Random Forest R Project for *Python and R Data Science Diploma* Course
+
 
 ## 🔎 What You'll Find
 This project implements a predictive analysis of hotel booking cancellations using Random Forest.
@@ -12,23 +14,36 @@ The analytical application is divided into the following sections:
 4. **Model Comparison** *(Comparación de Modelos)*: Comparative evaluation of different configurations' performance
 5. **Interactive** *(Interactivo)*: Real-time prediction interactive module
 
-## 💡 Main Insights
-- Most influential variables in predictions were [lead.time], [average.price], [day], [month], and [special.requests]
-- Clients are more likely to cancel their reservations when there is a considerable time period between booking and arrival date [lead.time]
-- Cancellations are most common for rooms priced around $110/day [average.price]
-- Bookings are more likely to be cancelled if made in the middle of the month or middle of the year [day], [month]
-- The higher the number of special requests, the less likely clients are to cancel their reservation [special.requests]
-- The best Random Forest model implementation achieved 96% accuracy on the test set *(data balanced with upsampling technique and model trained with top 5 most influential variables)*
 
 ## 🏗️ Project Structure
-- 📁 01_data: Zipped raw data
-- 📁 02_rfmodels: Zipped .rds files containing trained models for faster deployment
+- 📁 data: Zipped raw data
 - 📁 www: Static resources
 - 📱 app.R: Main Shiny application
 
+
+## 💡 Main Insights
+- Most influential variables in predictions were **[lead.time]**, **[average.price]**, **[day]**, **[month]**, and **[special.requests]**
+
+- Clients are **more likely to cancel** their reservations when there is a **considerable time period between booking and arrival date [lead.time]**
+
+- Cancellations are **most common for rooms priced around $110/day [average.price]**
+
+- Bookings are more likely to be cancelled if made in the **middle of the month or middle of the year [day], [month]**
+
+- The higher the number of **special requests, the less likely clients are to cancel** their reservation [special.requests]
+
+- The best Random Forest model implementation achieved **96% accuracy** on the test set
+    
+    - *(data balanced with upsampling technique and model trained with top 5 most influential variables)*
+
+
 ## ⚠️ Considerations
-- To run the app on your local machine, unzip the raw data and models in the [01_data] and [02_rfmodels] folders and install necessary R dependencies.
+- To run the app on your local machine, unzip the raw data in the [01_data] folder and install necessary R dependencies.
+
+- Running the **`app.R`** file might take considerable time (1-2 minutes).
+
 - The application's interface is in Spanish, as this project was developed for a Spanish-language course.
+
 
 ## 🎬 Section Demos
 
@@ -47,8 +62,10 @@ The analytical application is divided into the following sections:
 ### Interactive
 [Space for Interactive section GIF]
 
+
 ## 👥 Contributions
-- [Maricel Flamini](https://ar.linkedin.com/in/maricel-flamini-19a433222) was a key contributor to this project
+- Special thanks to [Maricel Flamini](https://ar.linkedin.com/in/maricel-flamini-19a433222), who was a key contributor to this project
+
 
 ## 🔗 Sources
 - **Dataset**: [Hotel Booking Cancellation Prediction](https://www.kaggle.com/datasets/youssefaboelwafa/hotel-booking-cancellation-prediction/data)
